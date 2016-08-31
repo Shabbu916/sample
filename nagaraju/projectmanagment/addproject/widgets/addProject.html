@@ -1,0 +1,24 @@
+<form ng-controller="SelectpickerPanelCtrl as selectpickerVm" name="addProject" ng-submit="submitProjectForm()" novalidate>
+    <div class="form-group">
+        <label class="form-group">Client</label>
+        <input type="text" class="form-control" ng-model="selectpickerVm.selectedClient" placeholder="Client"  required>
+        </input>
+    </div>
+
+    <div class="form-group">
+        <label class="form-group">Project</label>
+        <input type="text" class="form-control" ng-model="selectpickerVm.selectedProject"  placeholder="Project" required>
+        </input>
+    </div>
+
+    <div class="form-group">
+        <label class="form-group">Manager</label>
+        <input type="text"  class="form-control " ng-model="selectpickerVm.selectedManager" placeholder="Manager" required>
+        </input>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-md">Submit</button>
+    </div>
+
+</form>
